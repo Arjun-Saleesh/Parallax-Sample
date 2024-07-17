@@ -10,8 +10,14 @@ h3{
 }
 .navbar{
     display: flex;
-    background-color: rgb(217, 236, 243);
+    background-color: white;
  height: 50px;
+
+}
+
+nav{
+    position: sticky;
+    top: 0;
 }
 .list{
     position: relative;
@@ -101,6 +107,51 @@ h4{
     background-color: lightblue;
     border-radius: 15px;
 }
+.imgscroll1{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./img/beautiful-spring-tropical-mountain-freshness-forest.jpg);
+    background-size: cover;
+    background-position: center;
+    display: table;
+    background-attachment: fixed;
+}
+.imgscroll2{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./img/curvy-narrow-muddy-road-dark-forest-surrounded-by-greenery-little-light-coming-from.jpg);
+    background-size: cover;
+    background-position: center;
+    display: table;
+    background-attachment: fixed;
+}
+.imgscroll3{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./img/fallen-green-spruce-tree-near-lake-winter.jpg);
+    background-size: cover;
+    background-position: center;
+    display: table;
+    background-attachment: fixed;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 footer {
     background-color: lightblue;
     width: 100%;
