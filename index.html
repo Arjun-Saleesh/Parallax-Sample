@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parallax</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav>
+       <div class="navbar">
+        <h3>TRAVELL</h3>
+        <div class="list">
+            <ul type="none">
+                <li>HOME</li>
+                <li>ABOUT</li>
+                <li>LOGIN</li>
+                
+            </ul>
+        </div>
+       </div>
+    </nav>
+    <section class="zoom">
+        <img src="./img/mountain1.png" alt="" id="layer1">
+        <img src="./img/mountain2.png" alt="" id="layer2">
+        <img src="./img/text.png" alt="" id="text">
+    </section>
+    <section class="content">
+       <h2>Let's Explore The Place </h2>
+       <div class="row">
+        <div class="container">
+            <img src="https://irisholidays.com/keralatourism/wp-content/uploads/2018/12/athirapally-falls-kerala.jpg" alt="">
+            <h4>Athirappilly</h4>
+        </div>
+        <div class="container">
+            <img src="https://www.tourmyindia.com/blog/wp-content/uploads/2021/03/Best-Places-to-Visit-in-Kerala.jpg" alt="">
+            <h4>Alappuzha</h4>
+        </div>
+        <div class="container">
+            <img src="https://th.bing.com/th/id/R.c36ebc04faa0d14b7ec9a5fae9a287f8?rik=7zMScYF%2fwC6wsw&riu=http%3a%2f%2fwww.realbharat.org%2fwp-content%2fuploads%2f2015%2f09%2fMUNNAR-WK.jpg&ehk=16FF6j%2bTHayIm2N3whYMh0PqNjOGgxoVRXNSG%2b%2b14MM%3d&risl=&pid=ImgRaw&r=0" alt="">
+            <h4>Munnar</h4>
+        </div>
+       </div>
+    </section>
+    <section class="content">
+       <h2>Adventure Spots </h2>
+       <div class="row">
+        <div class="container">
+            <img src="https://mogulski.com.au/wp-content/uploads/2019/01/Verbier-Feature.jpeg" alt="">
+            
+        </div>
+        <div class="container">
+            <img src="https://www.tripsavvy.com/thmb/6JyMktL8B1NJpLvIq8lxep6MO5w=/2121x1414/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-905848766-1fbace9af35e45b39aeee141e0ea7bfc.jpg" alt="">
+            
+        </div>
+        <div class="container">
+            <img src="https://blog-idceurope.com/wp-content/uploads/2018/08/IDC-cloud-partners.jpg" alt="">
+            
+        </div>
+       </div>
+    </section>
+    <footer>
+        <div class="foot">
+            <a class="text-body" href="#" ><label for=""> © 2024 Copyright:© 2024 Travell | Adventure Travel & Photography  | About | Policy Page | Contact</label></a>
+        </div>
+    </footer>
+    <script>
+        var layer1=document.getElementById(`layer1`)
+        scroll = window.pageYOffset;
+        document.addEventListener('scroll',function(e){
+            var offset= window.pageYOffset;
+            scroll =offset;
+            layer1.style.width = (100 + scroll/5) + `%`
+        })
+        var layer2=document.getElementById(`layer2`)
+        scroll = window.pageYOffset;
+        document.addEventListener('scroll',function(e){
+            var offset= window.pageYOffset;
+            scroll =offset;
+            layer2.style.width = (100 + scroll/5) + `%`;
+            layer2.style.left = scroll/50 + `%`;
+        })
+        var text=document.getElementById(`text`)
+        scroll = window.pageYOffset;
+        document.addEventListener('scroll',function(e){
+            var offset= window.pageYOffset;
+            scroll =offset;
+            layer2.style.width = (100 + scroll/5) + `%`;
+            text.style.top = - scroll/20 + `%`;
+        })
+    </script>
+</body>
+</html>
